@@ -16,15 +16,7 @@ console.log(`endpoint = ${endpoint}`)
 
 // Cognitive service features
 const visualFeatures = [
-    "ImageType",
-    "Faces",
-    "Adult",
-    "Categories",
-    "Color",
-    "Tags",
     "Description",
-    "Objects",
-    "Brands"
 ];
 
 export const isConfigured = () => {
