@@ -57,7 +57,7 @@ export const computerVision = async (url) => {
     const urlToAnalyze = url || RandomImageUrl();
     
     // analyze image
-    const analysis = await computerVisionClient.analyzeImage(urlToAnalyze, { visualFeatures });
+    const analysis = await computerVisionClient.analyzeImage({ visualFeatures });
 
     // text detected - what does it say and where is it
     if (includesText(analysis.tags) || includesHandwriting(analysis.tags)) {
